@@ -57,3 +57,5 @@ export const Qwe: Story = {
     label: "Button"
   }
 };
+
+export { Custom } from './Custom.stories'
