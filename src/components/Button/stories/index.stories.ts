@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 import { Button } from 'a-ui-cl';
+import { Custom } from './Custom.stories';
+import CustomRaw from './Custom.stories?raw'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -58,4 +60,13 @@ export const Qwe: Story = {
   }
 };
 
-export { Custom } from './Custom.stories'
+// @ts-expect-error parameters is for storybook
+Custom.parameters = {
+  docs: {
+    source: {
+      code: CustomRaw,
+    },
+  },
+};
+
+export { Custom }
