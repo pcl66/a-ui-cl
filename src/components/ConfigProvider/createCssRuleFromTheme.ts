@@ -13,5 +13,5 @@ export const createCssRuleFromTheme = (
 
     return `${selector} { ${cssVarsAsString} }`;
   }
-  return `${selector} { }`;
+  return `${selector} {}`;
 }
