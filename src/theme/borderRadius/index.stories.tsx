@@ -2,7 +2,8 @@ import { BorderRadiusTokens, webLightTheme } from 'a-ui-cl'
 
 export const BorderRadius = () => {
 
-  const borderRadiusTokens = Object.keys(webLightTheme).filter(v => v.startsWith('borderRadius')) as (keyof BorderRadiusTokens)[];
+  const borderRadiusTokens =
+    Object.keys(webLightTheme).filter(v => v.startsWith('borderRadius')) as (keyof BorderRadiusTokens)[];
 
   return (
     <>
